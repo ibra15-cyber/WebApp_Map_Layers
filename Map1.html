@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a4be619f5d82473b939bdc74e1ef5eba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a4be619f5d82473b939bdc74e1ef5eba" ></div>
+        
+</body>
+<script>    
+    
+            var map_a4be619f5d82473b939bdc74e1ef5eba = L.map(
+                "map_a4be619f5d82473b939bdc74e1ef5eba",
+                {
+                    center: [5.6291321, -0.1728578],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 0,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e3e1a0382d2c447d94451e5cdf589fe5 = L.tileLayer(
+                "tiles here",
+                {"attribution": "me", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_a4be619f5d82473b939bdc74e1ef5eba);
+        
+    
+            var marker_655bc61e23124cee9946ec4c8e72ab37 = L.marker(
+                [5.6288, -0.6625],
+                {}
+            ).addTo(map_a4be619f5d82473b939bdc74e1ef5eba);
+        
+    
+            var icon_bf0b32ff6873478eae5179d6294c6e43 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_655bc61e23124cee9946ec4c8e72ab37.setIcon(icon_bf0b32ff6873478eae5179d6294c6e43);
+        
+    
+        var popup_13ea523a0e584d7387d5e2b20ed9f945 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c3ff6331e10e488e869e3e6771ab873c = $(`<div id="html_c3ff6331e10e488e869e3e6771ab873c" style="width: 100.0%; height: 100.0%;"><i>Mt. Hood Meadows</i></div>`)[0];
+            popup_13ea523a0e584d7387d5e2b20ed9f945.setContent(html_c3ff6331e10e488e869e3e6771ab873c);
+        
+
+        marker_655bc61e23124cee9946ec4c8e72ab37.bindPopup(popup_13ea523a0e584d7387d5e2b20ed9f945)
+        ;
+
+        
+    
+    
+            marker_655bc61e23124cee9946ec4c8e72ab37.bindTooltip(
+                `<div>
+                     Click meee!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
